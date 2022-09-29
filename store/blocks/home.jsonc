@@ -1,0 +1,49 @@
+{
+  "store.home": { 
+    "blocks": [
+       "rich-text",
+       "info-card#iphone",
+       "shelf#home"
+    ]
+  },
+  "rich-text": { 
+    "props": { 
+      "text": "VTEX Store LATAM",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+
+  
+  "info-card#iphone":{
+    "props":{
+      "id":"infoCardIphone",
+      "isFullModeStyle":true,
+      "textPosition": "left",
+      "imageUrl":"https://demo.sirv.com/hang.jpg?brightness=-14&contrast=-49",
+      "headline":"Bienvenido ...",
+      "subhead":"Descubre lo que puede hacer",
+      "callToActionText": "Conoce más",
+     
+      "textAlignment":"left",
+      "blockClass":"infoCardPixel"
+    }
+  },
+  "shelf#home":{
+    "blocks":["product-summary.shelf"],
+    "props":{
+      "orderBy":"OrderByTopSaleDESC",
+      "paginationDotsVisibility":"desktopOnly",
+      "productList":{
+        "maxItems":20,
+        "itemsPerPage":4,
+        "minItemsPerPage":1,
+        "scroll":"BY_PAGE",
+        "arrows":true,
+        "titleText":"Mas vendido"
+
+      }
+    }
+  }
+}
